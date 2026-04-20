@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 2 - Form</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Contact Form</h1>
+
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Main page</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="articles.html">Articles</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="form.html">Form</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                    <li><a href="anchors.html">Anchors</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container form-group">
+
+            <form action="#" method="post">
+
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="age">Age:</label>
+                        <input type="number" id="age" name="age" min="1" max="120">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password">
+                    </div>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferences</legend>
+
+                    <p>Gender:</p>
+
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+
+                    <p>Interests:</p>
+
+                    <input type="checkbox" id="coding" name="interests" value="coding">
+                    <label for="coding">Coding</label>
+
+                    <input type="checkbox" id="music" name="interests" value="music">
+                    <label for="music">Music</label>
+
+                    <input type="checkbox" id="travel" name="interests" value="travel">
+                    <label for="travel">Travel</label>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Message</legend>
+
+                    <div class="form-group">
+                        <label for="country">Country:</label>
+                        <select id="country" name="country">
+                            <option value="ukraine">Ukraine</option>
+                            <option value="usa">USA</option>
+                            <option value="uk">UK</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your Message:</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Write something..."></textarea>
+                    </div>
+
+                </fieldset>
+                <div class="form-buttons">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+
+            </form>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Full Stack 2026</p>
+            <p>Contact: <a href="mailto:r.kuzmich03@yahoo.com">r.kuzmich03@yahoo.com</a></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
